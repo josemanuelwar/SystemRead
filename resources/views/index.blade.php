@@ -16,19 +16,21 @@
                         </span>
                         <h4 class="my-3">E-Commerce</h4>
                         <p class="text-muted">
-                            Desarrollamos Sistemas para comercio Electronico como puntos de ventas o Sistemas de control de productos o de calidad
+                        Desarrollamos sistemas para comercio electrónico como puntos de ventas o Sistemas de control de productos o de calidad etc.
                         </p>
                     </div>
+                    
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Diseños Responsibos</h4>
+                        <h4 class="my-3">Diseños Responsivos</h4>
                         <p class="text-muted">
-                            Todos nustros sistemas son responsibos son adatables a cualquier dispositivo movil como tablets o telefonos inteligentes
+                        Todos nuestros sistemas son responsivos son adaptables a cualquier dispositivo móvil como tablets o teléfonos inteligentes.
                         </p>
                     </div>
+                    
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
@@ -36,7 +38,18 @@
                         </span>
                         <h4 class="my-3">Seguridad</h4>
                         <p class="text-muted">
-                            La seguridad para nosotros es muy importante por eso utilizamos los protocolos de seguridad informatica mas actuales
+                            La seguridad para nosotros es muy importante por eso utilizamos los protocolos de seguridad informática más actuales.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-desktop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Mantenimiento de Equipo Preventivo / Correctivo</h4>
+                        <p class="text-muted">
+                            Realizamos mantenimiento preventivo, correctivo a su equipos también los formateamos en caso de ser necesario   
                         </p>
                     </div>
                 </div>
@@ -269,7 +282,7 @@
                     <h2 class="section-heading text-uppercase">CONTÁCTANOS</h2>
                     <h3 class="section-subheading text-muted">TRABAJEMOS JUNTOS</h3>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <form id="contactForm" name="sentMessage" novalidate="novalidate" action="{{route('contacto')}}">
                     @csrf
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
@@ -278,11 +291,11 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Ingresa tu correo electronico *" required="required" data-validation-required-message="Por favor ingresa tu correo electronico." />
+                                <input class="form-control" id="email" type="email" placeholder="Ingresa tu correo electronico *" required="required" data-validation-required-message="Por favor ingresa tu correo electrónico." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder="Ingresa tu numero Telefonico *" required="required" data-validation-required-message="Por favor ingresa tu telefono." />
+                                <input class="form-control" id="phone" type="tel" placeholder="Ingresa tu número Telefónico *" required="required" data-validation-required-message="Por favor ingresa tu telefono." />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -301,4 +314,3 @@
             </div>
         </section>
 @include('layout.foder')
-<script src="{{asset('js/Gurdarcontacto.js')}}"></script>        

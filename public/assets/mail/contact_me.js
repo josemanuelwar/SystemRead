@@ -9,6 +9,8 @@ $(function () {
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
+            var urls=$("#contactForm").attr('action');
+            // console.log(urls);
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
@@ -21,7 +23,7 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "/assets/mail/contact_me.php",
+                url: urls,
                 type: "POST",
                 data: {
                     name: name,
@@ -39,7 +41,7 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Your message has been sent. </strong>"
+                        "<strong>Tu mensaje se ha enviado correctamente</strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
@@ -57,7 +59,7 @@ $(function () {
                         $("<strong>").text(
                             "Sorry " +
                                 firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                                ", Error tu mensaje no se ha enviado correctamente !"
                         )
                     );
                     $("#success > .alert-danger").append("</div>");
