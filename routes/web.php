@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 // });
 use App\Http\Controllers\HomeController;
 Route::get('/',[HomeController::class, 'home']);
-Route::post('/enviarcomentarios',[HomeController::class, 'GuardarCometario'])->name('contacto');
+Route::get('enviarcomentarios',[HomeController::class, 'GuardarCometario'])->name('contacto');

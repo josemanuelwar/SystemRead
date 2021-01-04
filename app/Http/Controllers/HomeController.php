@@ -1,10 +1,10 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-
+use App\Mail\Mensajes;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use App\Models\Contato;
 class HomeController extends Controller
 {
@@ -22,12 +22,23 @@ class HomeController extends Controller
             'phone'=>'required|max:14'
         ]);
 
+            
+        // $data = ['foo' => 'bar'];
+            
+        // Mail::send('index', $data, function($message)
+        // {
+        //     $message->to('josemanuelwar@hotmail.es', 'jose Manuel')->subject('Proyectos');
+        // });
+        
+            $mesajes= new Mensajes($request->get('name'),$request->get('email'),$request->get('message'),$request->get('phone'));
+            Mail::to("josemanuelwar@hotmail.es")->send($mesajes);
          $contato= new Contato();
-         $contato->nombre_completo=$request->post('name');
-         $contato->email=$request->post('email');
-         $contato->telefono=$request->post('phone');  
-         $contato->mensaje=$request->post('message');
+         $contato->nombre_completo=$request->get('name');
+         $contato->email=$request->get('email');
+         $contato->telefono=$request->get('phone');  
+         $contato->mensaje=$request->get('message');
          $contato->save();
         return $request;
     }
+
 }
