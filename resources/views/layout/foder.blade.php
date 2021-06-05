@@ -20,8 +20,14 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        
+        <!-- Contact form JS-->
+        <script src="{{ asset('assets/mail/jqBootstrapValidation.js')}}"></script>
+        <script src="{{ asset('assets/mail/contact_me.js')}}"></script>
+        <!-- Core theme JS-->
+        <script src="{{ asset('js/scripts.js') }}"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
+            AOS.init();
             $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -29,11 +35,6 @@
                 });
         </script>
 
-        <!-- Contact form JS-->
-        <script src="{{ asset('assets/mail/jqBootstrapValidation.js')}}"></script>
-        <script src="{{ asset('assets/mail/contact_me.js')}}"></script>
-        <!-- Core theme JS-->
-        <script src="{{ asset('js/scripts.js') }}"></script>
-        
+
     </body>
 </html>

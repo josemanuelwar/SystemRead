@@ -19,19 +19,10 @@ class HomeController extends Controller
             'name' => 'required|max:60',
             'email' =>'required|max:120|email',
             'message'=>'required|max:500',
-            'phone'=>'required|max:14'
         ]);
 
-            
-        // $data = ['foo' => 'bar'];
-            
-        // Mail::send('index', $data, function($message)
-        // {
-        //     $message->to('josemanuelwar@hotmail.es', 'jose Manuel')->subject('Proyectos');
-        // });
-        
             $mesajes= new Mensajes($request->get('name'),$request->get('email'),$request->get('message'),$request->get('phone'));
-            Mail::to("josemanuelwar@hotmail.es")->send($mesajes);
+            Mail::to("josemanuel@systemready.online")->send($mesajes);
          $contato= new Contato();
          $contato->nombre_completo=$request->get('name');
          $contato->email=$request->get('email');

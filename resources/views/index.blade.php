@@ -4,12 +4,12 @@
 <!-- Services-->
 <section class="page-section" id="services">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" data-aos="fade-down-right">
                     <h2 class="section-heading text-uppercase">Servicios</h2>
                     <h3 class="section-subheading text-muted">Conose nuestros servicios</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-right">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
@@ -19,8 +19,8 @@
                         Desarrollamos sistemas para comercio electrónico como puntos de ventas o Sistemas de control de productos o de calidad etc.
                         </p>
                     </div>
-                    
-                    <div class="col-md-4">
+
+                    <div class="col-md-4" data-aos="fade-right">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
@@ -30,8 +30,8 @@
                             Todos nuestros sistemas son responsivos son adaptables a cualquier dispositivo móvil como tablets o teléfonos inteligentes.
                         </p>
                     </div>
-                    
-                    <div class="col-md-4">
+
+                    <div class="col-md-4" data-aos="fade-right">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
@@ -42,14 +42,14 @@
                         </p>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-right">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-desktop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Mantenimiento de Equipo Preventivo / Correctivo</h4>
                         <p class="text-muted">
-                            Realizamos mantenimiento preventivo, correctivo a su equipos también los formateamos en caso de ser necesario   
+                            Realizamos mantenimiento preventivo, correctivo a su equipos también los formateamos en caso de ser necesario
                         </p>
                     </div>
                 </div>
@@ -57,14 +57,14 @@
         </section>
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
+            <div class="container"  data-aos="zoom-in">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="3000">
                     <h2 class="section-heading text-uppercase">Portafolio</h2>
                     <h3 class="section-subheading text-muted">Conoce nuestros proyectos realizados</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up" data-aos-duration="3000">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up" data-aos-duration="3000">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up" data-aos-duration="3000">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item" data-aos="fade-up" data-aos-duration="3000">
                             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -151,7 +151,7 @@
             </div>
         </section>
         <!-- Contact -->
-        <section class="page-section" id="contact">
+        <section class="page-section" id="contact" data-aos="fade-up">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">CONTÁCTANOS</h2>
@@ -202,7 +202,7 @@
                                     <!-- <p class="item-intro text-muted">.</p> -->
                                     <img class="img-fluid d-block mx-auto" src="{{asset('assets/img/portfolio/trabajos/Trabajo.png')}}" alt="" />
                                     <p>
-                                        El proyecto consiste en que un usuario registre su ingresos y egreso para llevar un control de su dinero. 
+                                        El proyecto consiste en que un usuario registre su ingresos y egreso para llevar un control de su dinero.
                                         El proyecto fue realizado con las tecnologías de bootstrap 3, c# ,sql server 2019,jquery.
                                     </p>
                                     <ul class="list-inline">
@@ -220,7 +220,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
         <!-- Modal 2-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -319,4 +319,3 @@
                 </div>
             </div>
         </div>
-        
